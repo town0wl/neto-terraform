@@ -10,7 +10,7 @@ resource "yandex_compute_instance" "test-instance-a" {
   resources {
     cores  = 2
     memory = 4
-    core_fraction = 50
+    core_fraction = 20
   }
 #  scheduling_policy {
 #    preemptible = true
@@ -41,7 +41,7 @@ resource "yandex_compute_instance" "test-instance-b" {
   resources {
     cores  = 2
     memory = 4
-    core_fraction = 50
+    core_fraction = 20
   }
 #  scheduling_policy {
 #    preemptible = true
@@ -72,7 +72,7 @@ resource "yandex_compute_instance" "test-master-c" {
   resources {
     cores  = 2
     memory = 4
-    core_fraction = 50
+    core_fraction = 20
   }
 #  scheduling_policy {
 #    preemptible = true
@@ -103,7 +103,7 @@ resource "yandex_compute_instance" "service-host" {
   resources {
     cores  = 2
     memory = 4
-    core_fraction = 50
+    core_fraction = 100
   }
   boot_disk {
     initialize_params {
