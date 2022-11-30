@@ -22,7 +22,7 @@ terraform {
   required_version = ">= 0.13"
   
   backend "s3" {
-    # partial configuration: so bucket, key, access_key, secret_key - needed additionally
+    # partial configuration: so that bucket, key, access_key, secret_key - needed additionally
     endpoint   = "storage.yandexcloud.net"
     region     = "ru-central1"
 
