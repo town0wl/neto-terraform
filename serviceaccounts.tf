@@ -37,5 +37,6 @@ output "k8s-image-puller-key-public" {
 }
 output "k8s-image-puller-key-private" {
   description = "Private key for k8s-image-puller-key"
+  sensitive = true
   value = yandex_iam_service_account_key.k8s-image-puller-key.private_key
 }
